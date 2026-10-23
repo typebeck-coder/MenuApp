@@ -3,6 +3,7 @@ package br.com.etecia.myapp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,9 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        btnEnviar = findViewById(R.id.btnEnviar);
+
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Voce clicou", Toast.LENGTH_SHORT).show();
 
             }
         });
