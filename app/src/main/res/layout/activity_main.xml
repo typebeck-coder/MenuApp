@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<com.google.android.material.appbar.MaterialToolbar
+    android:id="@+id/tooBarMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:menu="@menu/menu_principal"
+    app:title="YourApp baby"
+    app:navigationIcon="@drawable/baseline_arrow_back_ios"
+    />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_nav_bar"
+        android:layout_gravity="bottom"
+        app:labelVisibilityMode="labeled"
+        />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
